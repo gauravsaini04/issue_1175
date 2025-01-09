@@ -6,15 +6,9 @@ services:
     command: sleep infinity
     links:
       - node-app
-    # Add features here
-    environment:
-      - DEVCONTAINER_FEATURES=github.com/devcontainers/features/python
-
+      
   node-app:
     image: mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm
     volumes:
       - .:/workspace:cached
     command: sleep infinity
-    # Add features here
-    environment:
-      - DEVCONTAINER_FEATURES=github.com/devcontainers/features/node

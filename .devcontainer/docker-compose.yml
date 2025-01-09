@@ -5,10 +5,10 @@ services:
     volumes:
       - .:/workspace:cached
     command: sleep infinity
-    links:
-      - node-app 
+
   node-app:
     image: mcr.microsoft.com/devcontainers/typescript-node:1-20-bookworm
     volumes:
       - .:/workspace:cached
     command: sleep infinity
+

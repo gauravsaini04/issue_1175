@@ -1,6 +1,6 @@
 {
     "name": "Node Container",
-    "dockerComposeFile": ["../../docker-compose.yml"],
+    "dockerComposeFile": ["../../.devcontainer/docker-compose.yml", "../../.devcontainer/docker-compose.extend.yml"],
     "service": "node-app",
     "workspaceFolder": "/workspace",
     "features": {

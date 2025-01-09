@@ -1,22 +1,23 @@
 {
-    "name": "Multi-Container Workspace",
-    "dockerComposeFile": ["../docker-compose.yml", "docker-compose.extend.yml"],
-    "service": "python-api",
-    "postCreateCommand": "npm install -g @devcontainers/cli",
-    "workspaceFolder": "/workspace",
-    "shutdownAction": "stopCompose",
-    "features": {
-      "ghcr.io/devcontainers/features/docker-in-docker:2": {}
-    },
-    "hostRequirements": {
-      "cpus": 4
-    },
-    "customizations": {
-      "vscode": {
-        "extensions": [
-          "mads-hartmann.bash-ide-vscode"
-        ]
-      }
+  "name": "Multi-Container Workspace",
+  "dockerComposeFile": [
+    "./docker-compose.yml",
+    "./docker-compose.extend.yml"
+  ],
+  "service": "python-api",
+  "workspaceFolder": "/workspace",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "postCreateCommand": "npm install -g @devcontainers/cli",
+  "hostRequirements": {
+    "cpus": 4
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "mads-hartmann.bash-ide-vscode"
+      ]
     }
   }
-  
+}

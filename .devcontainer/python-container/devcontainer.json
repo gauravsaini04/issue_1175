@@ -1,0 +1,10 @@
+{
+    "name": "Python Container",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "python-api",
+    "workspaceFolder": "/workspace",
+    "features": {
+      "github.com/devcontainers/features/python": {}
+    }
+}
+  

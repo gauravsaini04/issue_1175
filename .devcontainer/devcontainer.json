@@ -1,17 +1,21 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:1-18",
+    "name": "Multi-Container Workspace",
+    "dockerComposeFile": ["../docker-compose.yml"],
+    "service": "python-api",
+    "workspaceFolder": "/workspace",
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+      "ghcr.io/devcontainers/features/docker-in-docker:2": {}
     },
     "postCreateCommand": "npm install -g @devcontainers/cli",
     "hostRequirements": {
-        "cpus": 4
+      "cpus": 4
     },
     "customizations": {
-        "vscode": {
-            "extensions": [
-                "mads-hartmann.bash-ide-vscode"
-            ]
-        }
+      "vscode": {
+        "extensions": [
+          "mads-hartmann.bash-ide-vscode"
+        ]
+      }
     }
-}
+  }
+  
